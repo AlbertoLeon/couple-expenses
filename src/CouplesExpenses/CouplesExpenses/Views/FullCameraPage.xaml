@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CouplesExpenses.Views.FullCameraPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="UserName" Grid.Row="0" Grid.Column="0"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               Style="{StaticResource LabelPageHeadingStyle}"
+               >
+            
+        </Label>
+        <Label x:Name="UserTotal" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+                Style="{StaticResource LabelPageHeadingStyle}"
+               >
+            </Label>
+        <Button x:Name="Conciliate" Text="Conciliate" Grid.Row="0" Grid.Column="1"></Button>
+        <Label x:Name="SituationName" Grid.Row="1" Grid.Column="1"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+                Style="{StaticResource LabelPageHeadingStyle}"
+               >
+            </Label>
+        <Label x:Name="SituationAmount" Grid.Row="2" Grid.Column="1"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+                Style="{StaticResource LabelPageHeadingStyle}"
+               >
+            </Label>
+        <Label x:Name="PartnerName" Grid.Row="0" Grid.Column="2"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+                Style="{StaticResource LabelPageHeadingStyle}"
+               >
+            </Label>
+        <Label x:Name="PartnerTotal"  Grid.Row="1" Grid.RowSpan="2" Grid.Column="2"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               Style="{StaticResource LabelPageHeadingStyle}"
+               >
+            </Label>
+        <Button x:Name="AddExpenseByPhoto" Grid.Row="3" Grid.ColumnSpan="3" Text="Add by camera"></Button>
+        <Button x:Name="AddExpenseByHand" Grid.Row="4" Grid.ColumnSpan="3" Text="Add by hand"></Button>
+        <Button x:Name="AddExpenseByVoice" Grid.Row="5" Grid.ColumnSpan="3" Text="Add by voice"></Button>
+        <Button x:Name="NavigateReports" Grid.Row="6" Grid.ColumnSpan="3" Text="Reports"></Button>
+    </Grid>
+</ContentPage>
